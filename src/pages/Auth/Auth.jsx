@@ -13,7 +13,7 @@ function Auth() {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [name, setName] = useState('')
+    const [display_name, setName] = useState('')
 
     
     const dispatch = useDispatch()
@@ -25,10 +25,10 @@ function Auth() {
             alert("Enter email and password")
         }
         if(isSignup){
-            if(!name){
+            if(!display_name){
                 alert("Press enter to contniue")
             }
-            dispatch(signup({name, email, password}, navigate))
+            dispatch(signup({display_name, email, password}, navigate))
         }else{
             dispatch(login({email, password}, navigate))
         }
@@ -74,7 +74,7 @@ function Auth() {
                         </label>
                     }
                     
-                    <button type="submit" className="submit-wla-btn" >{isSignup?  'Sign up' : ' Log in'}</button>
+                    <button type="submit" className="submit-wla-btn" >{isSignup ?  'Sign up' : ' Log in'}</button>
                     {
                         isSignup && 
                         <p style={{color: "#666767", fontSize: '13px'}}>
