@@ -1,0 +1,106 @@
+/* login section */
+
+.auth-section{
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f2f3;
+}
+
+/* container 1 of the section total 2 */
+.auth-container-1{
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.auth-container-2{
+    min-height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h4{
+    margin-bottom: 3px;
+    font-size: small;
+}
+
+label{
+    margin-bottom: 16px;
+}
+
+.auth-container-2 form{
+    /* width: 100%; */
+    padding: 20px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 24px hsla(0,0%,0%,0.05), 0 20px 48px hsla(0, 0%, 0%, 0.05), 0 1px 4px hsla(0, 0%, 0%, 0.1);
+}
+
+/* stackOverFlow logo */ 
+/* .stackover-flow{
+    padding: 20px 30px;
+} */
+
+.stg-pass-hint.cheak-for{
+    font-size: smaller;
+}
+
+/* forget pass part */
+
+.forget-pass-thing{
+    display: flex;
+    justify-content: space-between;
+}
+.handelSwitch-btn{
+    border: none;
+    background-color: transparent;
+    color: #007ac6;
+    cursor: pointer;
+}
+
+/* #display-name , #email, #password{
+    width: 14.326rem;
+    height: 2.05rem;
+} */
+
+.auth-container-2 form label input{
+    padding: 10px;
+    width: calc(100%);
+    /* width: 14.326rem; */
+    border: 1px solid #0000003e;
+}
+
+.auth-container-1 p{
+    margin-top: 10px;
+}
+
+.submit-wla-btn{
+    height: 2.05rem;
+    padding: 10px 5px;
+    background-color: #009dff;
+    border: 1px #009dff;
+    color: white;
+    border-radius: 3px;
+    transition: 2.0s;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.submit-wla-btn:hover{
+    background-color: #018ce3;
+}
+
+.auth-container-2 form label:nth-child(5){
+    margin-top: 15px;
+    display: flex;
+}
+.auth-container-2 form label:nth-child(5) input{
+    width: 5%;
+    margin-right: 10px;
+}

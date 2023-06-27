@@ -1,0 +1,34 @@
+<section>
+        <div className="auth-form">
+            <div className="container">
+                <div className="logo-item">
+                        <img src={logo} alt="logo" width={40} />
+                </div>
+                <div className="outer-div">
+                    <div className="login-item ">
+                        <form >
+                            <div className="row col-1">
+                                <label htmlFor="">Email</label>
+                                <input className="email-input" type="email" required/>
+                            </div>
+                            <div className="row row-no-2">
+                                <din className="col-inner">
+                                <label htmlFor="">Password</label>
+                                <a href="/">Forget password?</a>
+                                </din>
+                                <div className="input-pass">
+                                <input type="password"  required />
+                            </div>
+                            </div>
+                            <div className="sub-btn-div">
+                                <button className='login-submit-btn' type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div className="have-acc">
+                    <p>Don’t have an account? <a href="/" className="sign-up-link">Sign up</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
