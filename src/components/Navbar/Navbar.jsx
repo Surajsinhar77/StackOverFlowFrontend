@@ -4,10 +4,13 @@ import logo from '../../assets/stackOverFlow.png';
 import '../../App.css';
 import Avater from '../Avater/Avater';
 // import search_icon from '../../assets/icon-search.png'
+import { DataContext } from "../../pages/Auth/DataProvider";
+import { useContext } from "react";
 
 const Navbar = () => {
+    const {data , login, logout} = useContext(DataContext);
+    console.log(data)
 
-    var user = null;
     return (
             <nav className='main-nav'>
             <div className='upper-border-line'></div>
@@ -26,15 +29,18 @@ const Navbar = () => {
                             </div>
                         </form>
                     
-                    {user != null ? 
-                    <Link to='/User' className='avater-item' >{<Avater backgroundColor="#009dff" px='0.225rem' py='0.660rem' borderRadius='50%' color="white"></Avater>} 
+                    {
+                        data == true? 
+                            <Link to='/User' className='avater-item' >{<Avater backgroundColor="#009dff" px='0.225rem' py='0.660rem' borderRadius='50%' color="white"></Avater>} 
 
-                    <Link to='/'>
-                    <input type='button' className='btn login-btn' value='Log out' />  
-                    </Link>
+                            <Link to='/Auth'>
+                                <input type='button' onClick={logout} className='btn login-btn' value='Log out'></input>  
+                            </Link>
 
-                    </Link> :  <Link to='/Auth'> <input className='btn login-btn' type="button" value='Log in'/></Link> }
-                    
+                            </Link> 
+                        :  
+                            <Link to='/Auth'> <input className='btn login-btn' type="button" value='Log in'/></Link> 
+                    }
                 </div>
             </nav>
     )

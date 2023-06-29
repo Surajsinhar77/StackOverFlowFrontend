@@ -14,7 +14,7 @@ const Avater = ({children,backgroundColor,padding,color,borderRadius,fontSize,te
 
     return (
         <div style={style}>
-            <h2>{children} S</h2>
+            <h2>{children} S </h2>
         </div>
     )
 }
