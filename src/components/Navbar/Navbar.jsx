@@ -31,12 +31,11 @@ const Navbar = () => {
                     
                     {
                         data == true? 
-                            <Link to='/User' className='avater-item' >{<Avater backgroundColor="#009dff" px='0.225rem' py='0.660rem' borderRadius='50%' color="white"></Avater>} 
+                            <Link to='/User' style={{cursor:'pointer'}} className='avater-item' >{<Avater backgroundColor="#009dff" px='0.225rem' py='0.660rem' borderRadius='50%' color="white"></Avater>} 
 
                             <Link to='/Auth'>
                                 <input type='button' onClick={logout} className='btn login-btn' value='Log out'></input>  
                             </Link>
-
                             </Link> 
                         :  
                             <Link to='/Auth'> <input className='btn login-btn' type="button" value='Log in'/></Link> 
